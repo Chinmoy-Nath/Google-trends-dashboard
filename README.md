@@ -17,7 +17,7 @@ queryParams = [ engine = "google_trends",
                 data_type = "GEO_MAP", 
                 date = "today 5-y", 
                 tz="-330",
-                api_key = "65d9c881bd2dcc9c210e4dbf6301c3849e7b692378f8efd0953f00a4b5708491"],
+                api_key = "your api key"],
 
 // Combine the endpoint and parameters
 fullUrl = apiUrl & "?" & Uri.BuildQueryString(queryParams),
@@ -51,7 +51,7 @@ QueryParams = [engine = "google_trends",
                data_type = "TIMESERIES",
                date = "all", 
                tz = "-330",    
-               api_key = "65d9c881bd2dcc9c210e4dbf6301c3849e7b692378f8efd0953f00a4b5708491"],
+               api_key = "your api key"],
 
 // Generate the full URL with query parameters
 UrlWithParams = BaseUrl & "?" & Text.Combine(List.Transform(Record.FieldNames(QueryParams), 
@@ -80,7 +80,7 @@ QueryParams = [engine = "google_trends",
                data_type = "TIMESERIES",
                date = "all", 
                tz = "-330",    
-               api_key = "65d9c881bd2dcc9c210e4dbf6301c3849e7b692378f8efd0953f00a4b5708491"],
+               api_key = "your api key"],
 
 // Generate the full URL with query parameters
 UrlWithParams = BaseUrl & "?" & Text.Combine(List.Transform(Record.FieldNames(QueryParams), 
@@ -107,7 +107,7 @@ let
 queryParams = [engine = "google_trends",
                q = Target_keyword,
                data_type = "RELATED_TOPICS",
-               api_key = "65d9c881bd2dcc9c210e4dbf6301c3849e7b692378f8efd0953f00a4b5708491"],
+               api_key = "your api key"],
 
 // Combine the endpoint and parameters to create the full URL
 fullUrl = apiUrl & "?" & Uri.BuildQueryString(queryParams),
